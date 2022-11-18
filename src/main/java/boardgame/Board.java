@@ -40,6 +40,13 @@ public class Board {
         return pieces[position.getRow()][position.getColumn()];
     }
     
+    public void placePiece( Piece piece, Position position){
+        //Pegando a matriz piece, ja declarada nesta classe, na posição dada
+        //e atribuindo a ela a peça informada
+        pieces[position.getRow()][position.getColumn()] = piece;
+        //atualizando a nova posição
+        piece.position = position;
+    }
 }
     
     
